@@ -6,10 +6,11 @@ from datetime import datetime
 
 import boto3
 
+AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
 
-s3 = boto3.client("s3")
-cloudwatch = boto3.client("cloudwatch")
-glue = boto3.client("glue")
+s3 = boto3.client("s3", region_name=AWS_REGION)
+cloudwatch = boto3.client("cloudwatch", region_name=AWS_REGION)
+glue = boto3.client("glue", region_name=AWS_REGION)
 
 
 VALIDATED_PREFIX = os.environ.get("VALIDATED_PREFIX", "validated/events/")
