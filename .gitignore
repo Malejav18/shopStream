@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+api/venv/
+
+# Env
+.env
+*.env
+
+# AWS / Zappa
+.zappa/
+*.zip
+
+# Generated data
+data_generator/output_shopstream/
+data_generator/*.jsonl
+
+# OS
+.DS_Store
+
+# Logs
+*.log
