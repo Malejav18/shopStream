@@ -25,3 +25,36 @@ tests/
 ├── test_generator.py
 ├── test_lambda_validation.py
 └── test_pyspark_logic.py
+```
+
+Se agregaron pruebas unitarias para:
+
+- API Flask:
+  - health
+  - home
+  - pages/top
+  - sessions/summary
+  - anomalies
+  - validación de parámetros
+
+- Lambda validator:
+  - validación de timestamps
+  - validación de page_view
+  - validación de cart_event
+  - detección de campos faltantes
+  - detección de acciones inválidas
+  - generación de rutas validated/ y quarantine/
+
+- Data generator:
+  - generación de usuarios
+  - generación de productos
+  - generación de sesiones
+  - validación de event_type
+  - validación de países
+  - validación de precios
+
+- PySpark:
+  - particionamiento por year/month/day
+
+
+''
